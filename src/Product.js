@@ -3,12 +3,12 @@ import "./Product.css";
 import { useStateValue } from "./StateProvider";
 import reducer from "./reducer";
 function Product({ title, price, image, rating }) {
-  const [state, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
+  console.log("Basket---->", basket);
   const AddToBasket = () => {
     dispatch({
-      type : 'ADD_TO_BASKET',
-      item:{
-        
+      type: "ADD_TO_BASKET",
+      item: {
         title: title,
         image: image,
         price: price,
