@@ -13,6 +13,7 @@ function Checkout() {
         <div>
           <h2 className="checkout_title"> your basket </h2>
         </div>
+           
       </div>
       <div className=" checkout_right">
         <div className="checkout_subtotal">
