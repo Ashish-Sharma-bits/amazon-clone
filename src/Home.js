@@ -14,21 +14,21 @@ function Home() {
         <div className="home_row">
           <Product
             title="Up to 50% off | Alexa & Fire TV devices"
-            price={29.9}
+            price={12.5}
             image="https://images-eu.ssl-images-amazon.com/images/G/31/img17/AmazonDevices/2019/Jupiter-21/phase3/1x_All-devices-tile-4-min._SY116_CB639196555_.jpg"
             rating={3}
           />
           <Product
             title="Up to 40% off | Mobiles & accessories"
-            price={29.9}
+            price={66.5}
             image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/cnnjpp/DesktopGateway_CategoryCard_379X304._SY304_CB639629275_.jpg"
-            rating={3}
+            rating={1}
           />
           <Product
             title="Up to 80% off + Extra ₹300 Cashback | Women"
-            price={29.9}
+            price={10.5}
             image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Fashion/Event/Gateway/Jupiter_21/Phase3/186-116/WF-6.2._SY116_CB639119115_.jpg"
-            rating={3}
+            rating={2}
           />
         </div>
         <div className="home_row">
@@ -40,15 +40,15 @@ function Home() {
           />
           <Product
             title="Up to 65% off | TVs & appliances"
-            price={29.9}
+            price={122}
             image="https://images-eu.ssl-images-amazon.com/images/G/31/img21/TVs/Jupiter21/LATV/MSO/cc_379X304LATV._SY304_CB639514026_.jpg"
-            rating={3}
+            rating={5}
           />
         </div>
         <div className="home_row">
           <Product
             title="Blockbuster Deals"
-            price={29.9}
+            price={123.5}
             image="https://m.media-amazon.com/images/I/51kMzJjPU+L._AC_SY200_.jpg"
             rating={3}
           />

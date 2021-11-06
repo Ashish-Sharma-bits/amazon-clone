@@ -1,0 +1,19 @@
+.checkoutProduct_rating {
+  display: flex;
+}
+.checkoutProduct {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+.checkoutProduct_info {
+  padding-left: 10px;
+}
+.checkoutProduct_image {
+  width: 200px;
+  height: 150px;
+  border-radius: 25px;
+}
+.checkoutProduct_info > button {
+  margin-top: 10px;
+}
