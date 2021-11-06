@@ -52,6 +52,18 @@ function Home() {
             image="https://m.media-amazon.com/images/I/51kMzJjPU+L._AC_SY200_.jpg"
             rating={3}
           />
+          <Product
+            title="Bedtime Originals Twinkle Toes Pink Elephant Plush, Hazel"
+            price={11.99}
+            image="https://m.media-amazon.com/images/I/81ZB62prn-L._AC_SY200_.jpg"
+            rating={2}
+          />
+          <Product
+            title="AOC C32G2ZE 32'' Curved Frameless Gaming Monitor, Full HD 1920x1080, VA, 0.5ms 240Hz, AMD "
+            price={100}
+            image="https://m.media-amazon.com/images/I/41HY2Yw3xFS.jpg"
+            rating={5}
+          />
         </div>
       </div>
     </div>
