@@ -1,14 +1,15 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
-import reducer from "./reducer";
-function Product({ title, price, image, rating }) {
+//import reducer from "./reducer";
+function Product({ id, title, price, image, rating }) {
   const [{ basket }, dispatch] = useStateValue();
   console.log("Basket---->", basket);
-  const AddToBasket = () => {
+  const addToBasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
+        id: id,
         title: title,
         image: image,
         price: price,
@@ -33,7 +34,7 @@ function Product({ title, price, image, rating }) {
         </div>
       </div>
       <img src={image} alt="" />
-      <button onClick={AddToBasket}>Add to Basket</button>
+      <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
 }
