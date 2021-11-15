@@ -8,6 +8,7 @@
 .login_container {
   padding: 15px;
   border: 1px solid rgb(251, 215, 124);
+  box-shadow: 5px 5px #999;
   width: 300px;
   height: fit-content;
   display: flex;
@@ -24,10 +25,14 @@
 .login_container > form {
     padding-top: 5px;
   }
-  .login_container > p {
+  .login_container > p  {
     margin: 5px;
     padding: 5px;
     font-size: 13px;
+  }
+  .login_container > p >input {
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .login_container > form > h4 {
     margin-bottom: 5px;

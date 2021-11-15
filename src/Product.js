@@ -4,7 +4,7 @@ import { useStateValue } from "./StateProvider";
 //import reducer from "./reducer";
 function Product({ id, title, price, image, rating }) {
   const [{ basket }, dispatch] = useStateValue();
-  console.log("Basket---->", basket);
+  //console.log("Basket---->", basket);
   const addToBasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",

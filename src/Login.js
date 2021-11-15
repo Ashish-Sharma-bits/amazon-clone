@@ -60,7 +60,7 @@ function Login() {
           />
         </form>
         <button type="submit" onClick={signIn}>
-          SignIn
+          Sign-In
         </button>
 
         <p>
