@@ -4,12 +4,15 @@ import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //import Product from "./Product";
 import Checkout from "./Checkout";
+import Login from "./Login";
 function App() {
   return (
-    //BEM
     <Router>
       <div className="app">
         <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
