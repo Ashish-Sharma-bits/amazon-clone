@@ -7,9 +7,10 @@ import Login from "./Login";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import { useEffect } from "react";
+import Payment from "./Payment";
 
 function App() {
-  const[{}, dispatch] = useStateValue();
+  const [{}, dispatch] = useStateValue();
   useEffect(() => {
     //load once eery time app loads
     auth.onAuthStateChanged((authUser) => {
@@ -17,18 +18,18 @@ function App() {
       if (authUser) {
         //logged in
         dispatch({
-          type:'SET_USER',
-          user:authUser
-        })
+          type: "SET_USER",
+          user: authUser,
+        });
       } else {
         //logged out
         dispatch({
-          type:'SET_USER',
-          user: null
-        })
+          type: "SET_USER",
+          user: null,
+        });
       }
-    }); 
-  }, []); 
+    });
+  }, []);
   return (
     <Router>
       <div className="app">
@@ -39,6 +40,10 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Payment />
           </Route>
           <Route path="/">
             <Header />
