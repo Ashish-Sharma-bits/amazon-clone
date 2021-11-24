@@ -10,9 +10,10 @@
   padding-left: 10px;
 }
 .checkoutProduct_image {
-  max-width: 200px;
+  width: 10em;
   height: 150px;
   border-radius: 5px;
+
 }
 .checkoutProduct_info > button {
   background: rgb(233, 205, 47);
